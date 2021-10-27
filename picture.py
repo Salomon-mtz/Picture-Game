@@ -99,15 +99,15 @@ setup(420, 420, 370, 0)
 onscreenclick(tap)
 listen()
 onkey(undo, 'u')
-onkey(lambda: color('black'), 'K')
-onkey(lambda: color('white'), 'W')
-onkey(lambda: color('green'), 'G')
-onkey(lambda: color('blue'), 'B')
-onkey(lambda: color('red'), 'R')
-onkey(lambda: color('purple'), 'P')
-onkey(lambda: store('shape', line), 'l')
-onkey(lambda: store('shape', square), 's')
-onkey(lambda: store('shape', circulo), 'c')
-onkey(lambda: store('shape', rectangle), 'r')
-onkey(lambda: store('shape', triangle), 't')
+onkey(lambda: color('black'), 'K') #color negro para las figuras
+onkey(lambda: color('white'), 'W') #color blanco para las figuras
+onkey(lambda: color('green'), 'G') #color verde para las figuras
+onkey(lambda: color('blue'), 'B') #color azul para las figuras
+onkey(lambda: color('red'), 'R') #color rojo para las figuras
+onkey(lambda: color('purple'), 'P') #color morado para las figuras
+onkey(lambda: store('shape', line), 'l') #tipo de figura a dibujar: línea
+onkey(lambda: store('shape', square), 's') #tipo de figura a dibujar: cuadrado
+onkey(lambda: store('shape', circulo), 'c') #tipo de figura a dibujar: círculo
+onkey(lambda: store('shape', rectangle), 'r') #tipo de figura a dibujar: rectángulo
+onkey(lambda: store('shape', triangle), 't') #tipo de figura a dibujar: triángulo
 done()

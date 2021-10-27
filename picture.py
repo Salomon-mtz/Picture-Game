@@ -1,11 +1,9 @@
 """"
-
 1. Add a color.
 2. Complete circle.
 3. Complete rectangle.
 4. Complete triangle.
 5. Add width parameter.
-
 """
 
 from turtle import *
@@ -35,7 +33,7 @@ def square(start, end):
     end_fill()
 
 
-def circle(start, end):
+def circulo(start, end):
     "Draw circle from start to end."
     up()
     goto(start.x, start.y)
@@ -50,7 +48,18 @@ def circle(start, end):
 
 def rectangle(start, end):
     "Draw rectangle from start to end."
-    pass  # TODO
+    up()
+    goto(start.x, start.y)
+    down()
+    begin_fill()
+
+    for i in range(2):
+        forward(end.x - start.x)
+        left(90)
+        forward(end.y - start.y)
+        left(90)
+    
+    end_fill()
 
 
 def triangle(start, end):
@@ -98,7 +107,7 @@ onkey(lambda: color('red'), 'R')
 onkey(lambda: color('purple'), 'P')
 onkey(lambda: store('shape', line), 'l')
 onkey(lambda: store('shape', square), 's')
-onkey(lambda: store('shape', circle), 'c')
+onkey(lambda: store('shape', circulo), 'c')
 onkey(lambda: store('shape', rectangle), 'r')
 onkey(lambda: store('shape', triangle), 't')
 done()
